@@ -21,7 +21,7 @@ public class ProducerConsumer {
                 }
                 System.out.println("Producatorul a produs:" + val);
                 queue.add(val);
-                val+=1;
+                val=val +1;
                 notify();
                 Thread.sleep(500);
             }

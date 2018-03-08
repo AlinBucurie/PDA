@@ -2,14 +2,14 @@ public class ProdCons {
 
     public static void main(String[] arg) throws InterruptedException
     {
-        ProducerConsumer Obj= new ProducerConsumer();
+        ProducerConsumer PC= new ProducerConsumer();
 
         Thread t1= new Thread(new Runnable() {
             @Override
             public void run() {
                 try
                 {
-                    Obj.produce();
+                    PC.produce();
                 }
 
                 catch (InterruptedException e)
@@ -25,7 +25,7 @@ public class ProdCons {
             public void run() {
                 try
                 {
-                    Obj.consuma();
+                    PC.consuma();
                 }
 
                 catch (InterruptedException e)
